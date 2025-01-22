@@ -5,6 +5,8 @@ categories:
   icon: fa fa-globe
   featured: true
   articles:
+      - accp-user-guide.md
+      - accp-admin-guide.md
 - category: gcp-compute-service
   icon: fa fa-cloud
   articles:

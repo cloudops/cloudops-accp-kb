@@ -1,0 +1,72 @@
+## Use this file to define the categories and articles for the knowledge base.
+
+categories:
+- category: accp-pilot-intro
+  icon: fa fa-globe
+  featured: true
+  articles:
+- category: gcp-compute-service
+  icon: fa fa-cloud
+  articles:
+      - gcp-working-with-instances.md
+      - gcp-working-with-disks.md
+      - gcp-instance-groups.md
+      - gcp-health-check.md
+      - gcp-ssl-certs.md
+      - gcp-load-balancing.md
+- category: azure-compute-service
+  icon: fa fa-cloud
+  articles:
+      - azure-service-overview.md
+      - azure-instances.md
+      - azure-working-with-instances.md
+      - azure-disks.md
+      - azure-working-with-disks.md
+- category: aws-compute-service
+  icon: fa fa-cloud
+  articles:
+      - aws_service_overview.md
+      - aws-compute.md
+      - aws-instances.md
+      - aws-amis.md
+      - aws-volumes.md
+      - aws-networking.md
+      - aws-vpcs.md
+      - aws-subnetworks.md
+      - aws-security_groups.md
+      - aws-object_storage.md
+      - aws-buckets.md
+      - aws-add_a_vpc.md
+      - aws-add_a_subnetwork.md
+      - aws-add_an_instance.md
+      - aws-add_a_volume.md
+- category: reporting
+  icon: fa fa-signal
+  articles:
+      - generate-a-usage-report.md
+- category: administration
+  icon: fa fa-wrench
+  articles:
+      - branding.md
+      - manage-users.md
+      - native-authentication-policies.md
+      - rbac.md
+      - rbac-use-cases-basic.md
+      - rbac-use-cases-advanced.md
+      - openid-connect.md
+- category: basic-concepts
+  icon: fa fa-globe
+  articles:
+      - cloud.ca-in-a-nutshell.md
+      - general-cloudmc_home_page.md
+      - main-cloudmc-entities.md
+      - environments-to-organize-workloads-and-users.md
+      - need-more-help.md
+- category: how-to
+  icon: fa fa-question
+  articles:
+      - enable-2fa.md  
+      - display-dates-in-your-preferred-time-zone.md
+      - how-to-cloudmc-api-key.md
+      - how-to-obtain-service-api-keys.md
+      - access_your_notifications.md

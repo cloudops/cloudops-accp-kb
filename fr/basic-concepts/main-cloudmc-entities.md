@@ -1,12 +1,12 @@
 ---
-title: "Entités principales de CloudMC"
+title: "Entités principales de la plateforme"
 slug: entites-principales-cloudmc
 ---
 
 
-CloudMC dispose d'un puissant modèle d'utilisateurs et de ressources, fournissant des fonctionnalités multi-locataires au niveau de l'entreprise pour connecter une variété de services différents. Voici une liste des principales entités qui fournissent la fonctionnalité et la sécurité dans CloudMC.
+ACCP dispose d'un puissant modèle d'utilisateurs et de ressources, fournissant des fonctionnalités multi-locataires au niveau de l'entreprise pour connecter une variété de services différents. Voici une liste des principales entités qui fournissent la fonctionnalité et la sécurité dans ACCP.
 
-### Entités de CloudMC
+### Entités d'ACCP
 
 - **Organisation :** Un regroupement d'utilisateurs finaux et de ressources connexes. Une organisation peut contenir des sous-organisations.
 
@@ -16,11 +16,11 @@ CloudMC dispose d'un puissant modèle d'utilisateurs et de ressources, fournissa
 
 - **Application :** Une application externe qui a été configurée pour l'accès via Master Portal.
 
-- **Utilisateur :** Un compte utilisateur est la manière dont un individu se connecte à CloudMC.
+- **Utilisateur :** Un compte utilisateur est la manière dont un individu se connecte à ACCP.
 
 - **Permission :** Une autorisation d'exécuter une tâche particulière.
 
-- **Rôle :** Une collection nommée d'autorisations qui régissent l'accès aux fonctionnalités de la console CloudMC, ainsi que l'accès aux ressources d'un service.
+- **Rôle :** Une collection nommée d'autorisations qui régissent l'accès aux fonctionnalités de la console ACCP, ainsi que l'accès aux ressources d'un service.
 
 ### Voir aussi
 

@@ -49,13 +49,10 @@ categories:
 - category: administration
   icon: fa fa-wrench
   articles:
-      - branding.md
       - manage-users.md
-      - native-authentication-policies.md
       - rbac.md
       - rbac-use-cases-basic.md
       - rbac-use-cases-advanced.md
-      - openid-connect.md
 - category: basic-concepts
   icon: fa fa-globe
   articles:

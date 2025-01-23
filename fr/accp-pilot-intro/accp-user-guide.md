@@ -1,5 +1,5 @@
 ---
-title: "ACCP guide d'utilisation"
+title: "ACCP guide d'utilisation (disponible en anglais seulement)"
 slug: accp-guide-utilisation
 ---
 

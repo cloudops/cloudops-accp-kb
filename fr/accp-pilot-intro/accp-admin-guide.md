@@ -1,5 +1,5 @@
 ---
-title: "ACCP guide d'administration"
+title: "ACCP guide d'administration (disponible en anglais seulement)"
 slug: accp-guide-administration
 ---
 
@@ -34,7 +34,7 @@ The following are the high-level steps required to deploy one or more research a
     In this step, you will use Cloud Connect to deploy the desired research app in the cloud deployment you created in the previous step.
 
 
-![Diagram illustrating a high-level view of the steps to configure and deploy in ACCP](drac-onboarding-workflow-overview.svg)
+![Diagram illustrating a high-level view of the steps to configure and deploy in ACCP](drac-onboarding-workflow-overview.png)
 
 **Tip:** This guide focuses on steps 1 through 3. For information on step 4, depolying research apps, please see the ACCP User Guide.
 

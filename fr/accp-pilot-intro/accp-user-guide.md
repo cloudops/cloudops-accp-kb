@@ -80,15 +80,15 @@ The ACCP platform is available at the following URL: [https://allianceaccp.cloud
 
 In order to log into the system for the first time, will need to open the invitation email that was sent to you. Click on the link to set the password for your ACCP account.
 
-![Screenshot of the email invitation](drac-onboarding-email-invitation.png ':size=35%')
+![Screenshot of the email invitation](drac-onboarding-email-invitation.png)
 
 The password requirements will be listed on this page. You will be asked to enter the password twice. If the invitation link has expired, please ask to have the invitation resent to you. Once the password has been saved, you will be redirected to the login page. You are ready to log into the system.
 
-![Screenshot of the ACCP login page](drac-onboarding-accp-login-page.png ':size=35%')
+![Screenshot of the ACCP login page](drac-onboarding-accp-login-page.png)
 
 Upon logging in, you are presented with the **Home** page for the system.
 
-![](drac-onboarding-accp-interface.png ':size=100%')
+![](drac-onboarding-accp-interface.png)
 
 1.  **Workspace**
 
@@ -131,7 +131,7 @@ Upon logging in, you are presented with the **Home** page for the system.
 
 6.  Click the **Submit** button.
 
-    ![](drac-onboarding-deploy-jupyterhub.png ':size=45%')
+    ![](drac-onboarding-deploy-jupyterhub.png)
 
 7.  The **JupyterHub** tab reappears. The new JupyterHub deployment is being provisioned and will take several minutes.
 
@@ -139,7 +139,7 @@ Upon logging in, you are presented with the **Home** page for the system.
 
     Make a note of this information and store it securely. Once the notification disappears from the panel, it cannot be recovered.
 
-    ![](drac-onboarding-credentials-jupyterhub.png ':size=45%')
+    ![](drac-onboarding-credentials-jupyterhub.png)
 
 
 ### Results
@@ -160,7 +160,7 @@ Upon logging in, you are presented with the **Home** page for the system.
 
 2.  With your credentials, log into JupyterHub.
 
-    ![](drac-onboarding-jupyterhub-login.png ':size=45%')
+    ![](drac-onboarding-jupyterhub-login.png)
 
 3.  After the JupyterHub instance launches, you will be presented with the JupyterHub interface.
 
@@ -193,7 +193,7 @@ Upon logging in, you are presented with the **Home** page for the system.
 
 6.  Click the **Submit** button.
 
-    ![](drac-onboarding-deploy-galaxy.png ':size=45%')
+    ![](drac-onboarding-deploy-galaxy.png)
 
 7.  The **Galaxy** tab reappears. The new Galaxy deployment is being provisioned and will take several minutes.
 
@@ -201,7 +201,7 @@ Upon logging in, you are presented with the **Home** page for the system.
 
     Make a note of this information and store it securely. Once the notification disappears from the panel, it cannot be recovered.
 
-    ![](drac-onboarding-credentials-galaxy.png ':size=35%')
+    ![](drac-onboarding-credentials-galaxy.png)
 
 
 ### Results
@@ -222,10 +222,10 @@ Upon logging in, you are presented with the **Home** page for the system.
 
 2.  With your credentials, log into Galaxy.
 
-    ![](drac-onboarding-galaxy-login.png ':size=50%')
+    ![](drac-onboarding-galaxy-login.png)
 
 3.  After the Galaxy instance launches, you will be presented with the Galaxy interface.
 
-    ![](drac-onboarding-galaxy-interface.png ':size=50%')
+    ![](drac-onboarding-galaxy-interface.png)
 
 

@@ -82,15 +82,15 @@ The ACCP platform is available at the following URL: [https://allianceaccp.cloud
 
 In order to log into the system for the first time, will need to open the invitation email that was sent to you. Click on the link to set the password for your ACCP account.
 
-![Screenshot of the email invitation](drac-onboarding-email-invitation.png ':size=35%')
+![Screenshot of the email invitation](drac-onboarding-email-invitation.png)
 
 The password requirements will be listed on this page. You will be asked to enter the password twice. If the invitation link has expired, please ask to have the invitation resent to you. Once the password has been saved, you will be redirected to the login page. You are ready to log into the system.
 
-![Screenshot of the ACCP login page](drac-onboarding-accp-login-page.png ':size=35%')
+![Screenshot of the ACCP login page](drac-onboarding-accp-login-page.png)
 
 Upon logging in, you are presented with the **Home** page for the system.
 
-![](drac-onboarding-accp-interface.png ':size=100%')
+![](drac-onboarding-accp-interface.png)
 
 1.  **Workspace**
 
@@ -220,7 +220,7 @@ Upon logging in, you are presented with the **Home** page for the system.
 
 8.  Click **Submit**.
 
-    ![](drac-onboarding-create-deployment.png ':size=35%')
+    ![](drac-onboarding-create-deployment.png)
 
 
 ### Results

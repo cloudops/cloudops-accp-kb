@@ -229,3 +229,41 @@ Upon logging in, you are presented with the **Home** page for the system.
     ![](drac-onboarding-galaxy-interface.png)
 
 
+# Feature Status
+
+This section provides a summary of the development status of various features in the ACCP platform.
+
+Last updated: 23 January 2025
+
+|Feature|Status|Description|
+|-------|------|-----------|
+|Cloud Connect Cloud Deployment creation|Complete|Available for AWS and GCP. Azure and Arbutus are under development.|
+|CILogon integration|Available with next update|Allows for logging into the AWS console from ACCP using single sign on.|
+|JupyterHub basic deployment|Complete|Installs JupyterHub on AWS infrastructure.|
+|JupyterHub user creation|In review|Allows user to specify a username and a password to be created in JupyterHub at deployment time.|
+|JupyerHub instance and storage type|In review|Allows user to specify a machine type for their instances and storage type for their volumes.|
+|Galaxy basic deployment|Complete|Installs Galaxy on AWS infrastructure.|
+|Galaxy user creation|In review|Allows user to specify a username and a password to be created in Galaxy at deployment time.|
+|Galaxy instance and storage type|Under development|Allows user to specify a machine type for their instances and storage type for their volumes.|
+|Galaxy instance power management|In review|Allows a Galaxy instance to be stopped, started, and destroyed from within Cloud Connect.|
+|Magic Castle basic deployment|Complete|Installs Magic Castle on AWS and Azure infrastructure.|
+|Magic Castle simplified deployment form|Under development|The simpler form will ask only for machine type and number of compute nodes.|
+|Cost reporting|Complete|Available for AWS and Azure deployments.|
+
+Explanations of status:
+
+-   **Under development**
+
+    Feature is currently being worked on by the CloudOps development team.
+
+-   **In review**
+
+    Feature has been implemented and is currently under review for quality and completeness.
+
+-   **Available with next update**
+
+    Feature has been finalized and will be deployed with the next regularly scheduled software update.
+
+-   **Complete**
+
+    Feature is fully functional on the ACCP platform.

@@ -327,7 +327,7 @@ Upon logging in, you are presented with the **Home** page for the system.
 
 This section provides a summary of the development status of various features in the ACCP platform.
 
-Last updated: 23 January 2025
+Last updated: 5 February 2025
 
 |Feature|Status|Description|
 |-------|------|-----------|
@@ -338,11 +338,12 @@ Last updated: 23 January 2025
 |JupyerHub instance and storage type|In review|Allows user to specify a machine type for their instances and storage type for their volumes.|
 |Galaxy basic deployment|Complete|Installs Galaxy on AWS infrastructure.|
 |Galaxy user creation|In review|Allows user to specify a username and a password to be created in Galaxy at deployment time.|
-|Galaxy instance and storage type|Under development|Allows user to specify a machine type for their instances and storage type for their volumes.|
+|Galaxy instance and storage type|In review|Allows user to specify a machine type for their instances and storage type for their volumes.|
 |Galaxy instance power management|In review|Allows a Galaxy instance to be stopped, started, and destroyed from within Cloud Connect.|
 |Magic Castle basic deployment|Complete|Installs Magic Castle on AWS and Azure infrastructure.|
-|Magic Castle simplified deployment form|Under development|The simpler form will ask only for machine type and number of compute nodes.|
+|Magic Castle simplified deployment form|In review|The simpler form will ask only for machine type and number of compute nodes.|
 |Cost reporting|Complete|Available for AWS and Azure deployments.|
+|Linking to restricted OpenStack projects in Arbutus|In review|Allows user to link an environment in ACCP to a restricted project in Arbutus, using an ID and secret entered at the time of linking.|
 
 Explanations of status:
 

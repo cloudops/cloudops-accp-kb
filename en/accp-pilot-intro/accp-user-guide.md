@@ -229,6 +229,100 @@ Upon logging in, you are presented with the **Home** page for the system.
     ![](drac-onboarding-galaxy-interface.png)
 
 
+
+# Deploy and Connect to Magic Castle
+
+## Deploy Magic Castle
+
+### Before you begin
+
+-   You must already have a Cloud Connect deployment
+-   If your cloud deployment resides in AWS, your environment must have its original default VPC
+
+### Procedure
+
+1.  Navigate to **Services** &gt; **Cloud Connect** and click on your deployment from the list of cloud deployments.
+
+2.  Click on the **Magic Castle** tab.
+
+    It is also possible to click on your target cloud deployment, then from the sidebar on the left, click on **Magic Castle**. When deploying via this route, the cloud deployment will be pre-selected and not modifiable when deploying Galaxy.
+
+3.  Click on the **Deploy Magic Castle** button.
+
+    The **Deploy Magic Castle** page appears.
+
+4.  From the **Cloud Deployment** popup menu, select the target cloud deployment.
+
+5.  Enter a name for the deployment.
+
+6.  In the **Domain** text box, enter the domain name for your deployment.
+
+    This is the domain name that will be used by Magic Castle for the Kerberos realm name when initializing FreeIPA, as well as the internal domain name for the cluster. It must be a fully-qualified domain name.
+
+7.  From the **Management and Login Instance Type** popup menu, select the desired instance type for the management and login nodes.
+
+    The system will deploy two instances of the selected type, one for management and one for login, where Magic Castle will be installed. The instance types will vary depending on whether the underlying platform is AWS or Azure.
+
+8.  From the **Compute Node Instance Type** popup menu, select the desired instance type for the compute nodes where Magic Castle will be installed.
+
+9.  In the **Count** text box, enter the number of Magic Castle compute nodes to deploy.
+
+10. \(Optional\) The **Volumes** section allows you to add additional volumes to some or all of your Magic Castle instances. These volumes will be attached to each instance at deployment time. Click on the **Add** button to configure one or more sets of volumes for the tagged instances you select.
+
+    1.  Enter into the **Name** text box the desired name for each volume. Each volume will have this name visible in the backend service.
+
+    2.  Enter the desired size for each volume, in GB, into the **Size** text box.
+
+    3.  The system will create and attach these volumes to the instance with the tags selected in the **Tags** popup menu. The supported tags are `login`, `mgmt`, and `node`. Note that if no tag is selected, the volumes will not be created.
+
+11. \(Optional\) To enable login using SSH keys, use the **SSH Keys section**.
+
+    1.  Selecting **None** will retain the default behaviour, when the Magic Castle cluster is deployed, the system will provide you with the password for the cluster's sudoer account.
+
+    2.  Selecting **New SSH key** will cause a textbox to appear, where you can enter a name for the key, and another text box where you can enter your public SSH key. The key will be created on the backend service and installed into the cluster's sudoer account. No password will be provided to you when the cluster is deployed.
+
+12. \(Optional\) Any other desired SSH keys to be installed directly onto the instances may be entered into the **Other SSH keys** text box. The keys will be created on the backend service and installed into the cluster's sudoer account.
+
+13. Click the **Submit** button.
+
+14. The **Magic Castle** tab reappears. The new Magic Castle deployment is being provisioned and will take several minutes.
+
+15. Once the deployment is complete, a toast notification will appear to advise you that the Magic Castle cluster is ready.
+
+    If you have not entered created a new SSH key for your cluster, the notifications panel will appear and provide you with the password that has been created for you. Copy it and store it in a safe place – once the notification disappears, the password cannot be retrieved.
+
+
+### Results
+
+-   Your Magic Castle cluster has been installed in the selected cloud deployment.
+-   The requested number of compute nodes have been deployed
+-   Any additional volumes have been created and attached
+-   Your public SSH key has been installed into the cluster sudoers account, or you have been provided and securely stored the credentials for the Magic Castle cluster sudoers account
+-   The security groups for the cluster have been configured to allow connections to port 22 for all inbound traffic \(`0.0.0.0/32`\)
+-   The Terraform logs contains the endpoint for your cluster, and may be found by clicking on your deployment from the list of deployments on the **Magic Castle** page
+-   To see and manage the individual instances, storage, and other resources used by this deployment, navigate to the backend service using the **Services** menu, and click on your environment
+-   You may connect via SSH to your login node
+
+## Connect to Magic Castle
+
+### Before you begin
+
+-   You must have a Magic Castle deployment available
+-   You must have either the private SSH key installed in your SSH client for the public SSH key that was deployed to the cluster, or the password that was generated for the sudoers account of the cluster, usually `centos`.
+-   You must have the IP address of the cluster endpoint, provided in the Terraform logs of the Magic Castle deployment
+
+### Procedure
+
+1.  Open your terminal or your SSH client.
+
+2.  Open a connection to the cluster endpoint, using the username `centos`.
+
+    Connecting with the private key from a Unix-based system: `ssh -l centos -i .ssh/<your_private_key> <IP_address_of_endpoint>`
+
+    Connecting with a password from a Unix-based system: `ssh -l centos <IP_address_of_endpoint>`. The SSH client will ask for the password when the SSH connection is established.
+
+3.  The command for the login node now appears.
+
 # Feature Status
 
 This section provides a summary of the development status of various features in the ACCP platform.

@@ -384,8 +384,8 @@ To access the Arbutus object storage, generate the storage access ID and secret 
 2.	Create the storage access ID and secret key with `openstack ec2 credentials create`.
 
 To connect the Arbutus object with Nextcloud.
-<ol>
-<li>>Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.
+<ol type="1">
+<li>Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.
 
  ![A](nextcloud-01.png)
 

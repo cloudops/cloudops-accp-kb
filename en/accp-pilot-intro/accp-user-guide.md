@@ -398,30 +398,30 @@ To connect the Arbutus object with Nextcloud.
  
 3. Click on “External Storage” in the left side menu.
 
-<li>Enter the name of the folder the Arbutus object storage is mounted to – e.g., Project ABC. Choose “Amazon S3” under the “External storage” column</li>
+4. Enter the name of the folder the Arbutus object storage is mounted to – e.g., Project ABC. Choose “Amazon S3” under the “External storage” column
 
  ![A](nextcloud-04.png)
 
-<li>Choose “Access Key” under the “Authentication” column</li>
-<li>Under the Configuration enter the following information:
+5. Choose “Access Key” under the “Authentication” column
+6. Under the Configuration enter the following information:
     <ol type="a">
     <li>Bucket: &lt;bucket name&gt;
     <li>Hostname: object-arbutus.cloud.computecanada.ca
     <li>Port: 443
     <li>Click on “Enable Path Style”
     <li>Leave “Enable SSL” and “Enable multipart copy” selected
-    </ol></li>
+    </ol>
  
  ![A](nextcloud-05.png)
 
 
-<li>Click the checkmark on the right and enter your institution account’s password.</li>
-<li>Click on “Files” in the top left corner</li>
+7. Click the checkmark on the right and enter your institution account’s password.
+8. Click on “Files” in the top left corner
 
  ![A](nextcloud-06.png)
 
  
-<li>Click on the folder you created to access the files in your Arbutus object storage bucket – e.g., Project ABC</li>
+9. Click on the folder you created to access the files in your Arbutus object storage bucket – e.g., Project ABC
  
  ![A](nextcloud-07.png)
 

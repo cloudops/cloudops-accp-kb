@@ -384,26 +384,26 @@ To access the Arbutus object storage, generate the storage access ID and secret 
 2.	Create the storage access ID and secret key with `openstack ec2 credentials create`.
 
 To connect the Arbutus object with Nextcloud.
-
-1.	Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.
+<ol>
+<li>>Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.
 
  ![A](nextcloud-01.png)
 
- ![A](nextcloud-02.png)
+ ![A](nextcloud-02.png)</li>
 
  
-2.	Click on your profile in the top right corner and click on “Settings”
+<li>Click on your profile in the top right corner and click on “Settings”
 
- ![A](nextcloud-03.png)
+ ![A](nextcloud-03.png)</li>
  
-3.	Click on “External Storage” in the left side menu.
+<li>Click on “External Storage” in the left side menu.</li>
 
-4.	Enter the name of the folder the Arbutus object storage is mounted to – e.g., Project ABC. Choose “Amazon S3” under the “External storage” column
+<li>Enter the name of the folder the Arbutus object storage is mounted to – e.g., Project ABC. Choose “Amazon S3” under the “External storage” column
 
- ![A](nextcloud-04.png)
+ ![A](nextcloud-04.png)</li>
 
-5.	Choose “Access Key” under the “Authentication” column
-6.	Under the Configuration enter the following information:
+<li>Choose “Access Key” under the “Authentication” column</li>
+<li>Under the Configuration enter the following information:
     <ol type="a">
     <li>Bucket: &lt;bucket name&gt;
     <li>Hostname: object-arbutus.cloud.computecanada.ca
@@ -412,17 +412,17 @@ To connect the Arbutus object with Nextcloud.
     <li>Leave “Enable SSL” and “Enable multipart copy” selected
     </ol>
  
- ![A](nextcloud-05.png)
+ ![A](nextcloud-05.png)</li>
 
 
-7.	Click the checkmark on the right and enter your institution account’s password.
-8.	Click on “Files” in the top left corner
+<li>Click the checkmark on the right and enter your institution account’s password.</li>
+<li>Click on “Files” in the top left corner
 
- ![A](nextcloud-06.png)
+ ![A](nextcloud-06.png)</li>
 
  
-9.	Click on the folder you created to access the files in your Arbutus object storage bucket – e.g., Project ABC
+<li>Click on the folder you created to access the files in your Arbutus object storage bucket – e.g., Project ABC
  
- ![A](nextcloud-07.png)
+ ![A](nextcloud-07.png)</li>
 
-
+</ol>

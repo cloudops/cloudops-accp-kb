@@ -387,9 +387,9 @@ To connect the Arbutus object with Nextcloud.
 
 1\. Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.
 
-    ![A](nextcloud-01.png)
+![A](nextcloud-01.png)
 
-    ![A](nextcloud-02.png)
+![A](nextcloud-02.png)
 
  
 2\. Click on your profile in the top right corner and click on “Settings”
@@ -405,13 +405,12 @@ To connect the Arbutus object with Nextcloud.
 5\. Choose “Access Key” under the “Authentication” column
 6\. Under the Configuration enter the following information:
 
-<span style="width: 40px; display: inline-block;">
-a. Bucket: &lt;bucket name&gt;
-b. Hostname: object-arbutus.cloud.computecanada.ca
-c. Port: 443
-d. Click on “Enable Path Style”
-e. Leave “Enable SSL” and “Enable multipart copy” selected
-</span>
+<span style="width: 40px; display: inline-block;"></span><span>a. Bucket: &lt;bucket name&gt;</span>
+<span style="width: 40px; display: inline-block;"></span><span>b. Hostname: object-arbutus.cloud.computecanada.ca</span>
+<span style="width: 40px; display: inline-block;"></span><span>c. Port: 443</span>
+<span style="width: 40px; display: inline-block;"></span><span>d. Click on “Enable Path Style”</span>
+<span style="width: 40px; display: inline-block;"></span><span>e. Leave “Enable SSL” and “Enable multipart copy” selected</span>
+
  
  ![A](nextcloud-05.png)
 

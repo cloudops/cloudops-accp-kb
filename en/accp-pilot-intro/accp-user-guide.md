@@ -405,11 +405,11 @@ To connect the Arbutus object with Nextcloud.
 5\. Choose “Access Key” under the “Authentication” column
 6\. Under the Configuration enter the following information:
     <ol type="a">
-    <li>Bucket: &lt;bucket name&gt;
-    <li>Hostname: object-arbutus.cloud.computecanada.ca
-    <li>Port: 443
-    <li>Click on “Enable Path Style”
-    <li>Leave “Enable SSL” and “Enable multipart copy” selected
+    <li>Bucket: &lt;bucket name&gt;</li>
+    <li>Hostname: object-arbutus.cloud.computecanada.ca</li>
+    <li>Port: 443</li>
+    <li>Click on “Enable Path Style”</li>
+    <li>Leave “Enable SSL” and “Enable multipart copy” selected</li>
     </ol>
  
  ![A](nextcloud-05.png)

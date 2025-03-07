@@ -362,3 +362,68 @@ Explanations of status:
 -   **Complete**
 
     Feature is fully functional on the ACCP platform.
+
+
+
+# ACCP Nextcloud
+
+Nextcloud is an open-source file sync and sharing software, similar to Dropbox, Google drive, etc. The official user documentation is available here: https://docs.nextcloud.com/server/latest/user_manual/en/
+
+Most functions are self-explanatory. Users can login via CILogon using their institutional credentials to the ACCP Nextcloud instance running at: 
+https://206-12-91-208.cloud.computecanada.ca/
+
+The default storage quota is 50GB; users may also connect to their Arbutus cloud (or other S3 compatible object storage) using the directions provided below.
+
+Note: this service is provided as part of the Alliance Cloud Connect Pilot (ACCP); therefore ensure that you have multiple copies of any valuable data and do not rely on this service for data backups.
+
+## Accessing Arbutus Object Storage via Nextcloud
+
+Pre-requisites: you must have a project with Object Storage access enabled on the Alliance’s Arbutus cloud (https://docs.alliancecan.ca/wiki/Cloud). Please e-mail cloud@tech.alliancecan.ca for support.
+
+To access the Arbutus object storage, generate the storage access ID and secret key with the [OpenStack command line client](https://docs.alliancecan.ca/wiki/OpenStack_command_line_clients).
+1.	Import your credentials with `source <project name>-openrc.sh`.
+2.	Create the storage access ID and secret key with `openstack ec2 credentials create`.
+
+To connect the Arbutus object with Nextcloud.
+
+1.	Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.
+
+ ![](nextcloud-01.png)
+
+ ![](nextcloud-02.png)
+
+ 
+2.	Click on your profile in the top right corner and click on “Settings”
+
+ ![](nextcloud-03.png)
+ 
+3.	Click on “External Storage” in the left side menu.
+
+4.	Enter the name of the folder the Arbutus object storage is mounted to – e.g., Project ABC. Choose “Amazon S3” under the “External storage” column
+
+ ![](nextcloud-04.png)
+
+5.	Choose “Access Key” under the “Authentication” column
+6.	Under the Configuration enter the following information:
+    <ol type="a">
+    <li>Bucket: &lt;bucket name&gt;
+    <li>Hostname: object-arbutus.cloud.computecanada.ca
+    <li>Port: 443
+    <li>Click on “Enable Path Style”
+    <li>Leave “Enable SSL” and “Enable multipart copy” selected
+    </ol>
+ 
+ ![](nextcloud-05.png)
+
+
+7.	Click the checkmark on the right and enter your institution account’s password.
+8.	Click on “Files” in the top left corner
+
+ ![](nextcloud-06.png)
+
+ 
+9.	Click on the folder you created to access the files in your Arbutus object storage bucket – e.g., Project ABC
+ 
+ ![](nextcloud-07.png)
+
+

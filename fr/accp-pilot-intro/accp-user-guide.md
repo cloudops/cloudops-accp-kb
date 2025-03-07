@@ -388,7 +388,7 @@ To connect the Arbutus object with Nextcloud.
 
 1.	Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.
 
- ![](nextcloud-01.png)
+ ![A](nextcloud-01.png)
 
  ![](nextcloud-02.png)
 

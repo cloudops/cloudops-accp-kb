@@ -392,7 +392,7 @@ To connect the Arbutus object with Nextcloud.
  ![A](nextcloud-02.png)</li>
 
  
-<li>Click on your profile in the top right corner and click on “Settings”
+<li value="2">Click on your profile in the top right corner and click on “Settings”
 
  ![A](nextcloud-03.png)</li>
  

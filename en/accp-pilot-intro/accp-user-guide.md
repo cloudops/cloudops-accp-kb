@@ -385,22 +385,22 @@ To access the Arbutus object storage, generate the storage access ID and secret 
 
 To connect the Arbutus object with Nextcloud.
 <ol type="1">
-<li>Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.
+<li>Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.</li>
 
  ![A](nextcloud-01.png)
 
- ![A](nextcloud-02.png)</li>
+ ![A](nextcloud-02.png)
 
  
-<li value="2">Click on your profile in the top right corner and click on “Settings”
+<li value="2">Click on your profile in the top right corner and click on “Settings”</li>
 
- ![A](nextcloud-03.png)</li>
+ ![A](nextcloud-03.png)
  
 <li>Click on “External Storage” in the left side menu.</li>
 
-<li>Enter the name of the folder the Arbutus object storage is mounted to – e.g., Project ABC. Choose “Amazon S3” under the “External storage” column
+<li>Enter the name of the folder the Arbutus object storage is mounted to – e.g., Project ABC. Choose “Amazon S3” under the “External storage” column</li>
 
- ![A](nextcloud-04.png)</li>
+ ![A](nextcloud-04.png)
 
 <li>Choose “Access Key” under the “Authentication” column</li>
 <li>Under the Configuration enter the following information:
@@ -410,19 +410,19 @@ To connect the Arbutus object with Nextcloud.
     <li>Port: 443
     <li>Click on “Enable Path Style”
     <li>Leave “Enable SSL” and “Enable multipart copy” selected
-    </ol>
+    </ol></li>
  
- ![A](nextcloud-05.png)</li>
+ ![A](nextcloud-05.png)
 
 
 <li>Click the checkmark on the right and enter your institution account’s password.</li>
-<li>Click on “Files” in the top left corner
+<li>Click on “Files” in the top left corner</li>
 
- ![A](nextcloud-06.png)</li>
+ ![A](nextcloud-06.png)
 
  
-<li>Click on the folder you created to access the files in your Arbutus object storage bucket – e.g., Project ABC
+<li>Click on the folder you created to access the files in your Arbutus object storage bucket – e.g., Project ABC</li>
  
- ![A](nextcloud-07.png)</li>
+ ![A](nextcloud-07.png)
 
 </ol>

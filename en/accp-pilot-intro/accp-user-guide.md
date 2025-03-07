@@ -384,19 +384,19 @@ To access the Arbutus object storage, generate the storage access ID and secret 
 2.	Create the storage access ID and secret key with `openstack ec2 credentials create`.
 
 To connect the Arbutus object with Nextcloud.
-<ol type="1">
-<li>Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.</li>
+
+1. Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.
 
  ![A](nextcloud-01.png)
 
  ![A](nextcloud-02.png)
 
  
-<li value="2">Click on your profile in the top right corner and click on “Settings”</li>
+2. Click on your profile in the top right corner and click on “Settings”<
 
  ![A](nextcloud-03.png)
  
-<li>Click on “External Storage” in the left side menu.</li>
+3. Click on “External Storage” in the left side menu.
 
 <li>Enter the name of the folder the Arbutus object storage is mounted to – e.g., Project ABC. Choose “Amazon S3” under the “External storage” column</li>
 
@@ -425,4 +425,3 @@ To connect the Arbutus object with Nextcloud.
  
  ![A](nextcloud-07.png)
 
-</ol>

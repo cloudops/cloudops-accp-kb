@@ -364,7 +364,7 @@ Explanations of status:
     Feature is fully functional on the ACCP platform.
 
 
-    # ACCP Nextcloud
+# ACCP Nextcloud
 
 Nextcloud is an open-source file sync and sharing software, similar to Dropbox, Google drive, etc. The official user documentation is available here: https://docs.nextcloud.com/server/latest/user_manual/en/
 

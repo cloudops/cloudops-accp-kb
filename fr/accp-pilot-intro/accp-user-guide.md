@@ -17,6 +17,8 @@ In this guide, you will find an overview of the basic workflows and concepts in 
 
 The following are the high-level steps required to deploy one or more research apps:
 
+![Diagram illustrating a high-level view of the steps to configure and deploy in Cloud Connect](drac-onboarding-user-workflow-overview.svg)
+
 1.  **Select a Cloud Connect deployment**
 
     The Cloud Connect deployment is where each set of research app deployments can be created, managed, and destroyed. A Cloud Connect deployment has already been created for your use.
@@ -36,19 +38,25 @@ The following are the high-level steps required to deploy one or more research a
 
     A grouping of related end-users and resources. The services needed to enable Cloud Connect have already been assigned to the organization created for your team.
 
+-   **Service**:
+
+    A connection to a remote entity, such as a public or private cloud, or Cloud Connect, that is made available to you via the ACCP user interface. You will see the available services under the **Services** menu at the top of the screen, and you can interact with services via the environments that are created within each service.
+
 -   **Environment**:
 
-    A logical unit within an organization that exposes the resources provided by Cloud Connect, and is used to further isolate and group resources securely. Access is controlled via a combination of environment roles and organization access controls.
+    A logical unit within an organization that exposes the resources provided by a service, and is used to further isolate and group resources securely. Clicking on a service from the Services menu will list all of its environments.
 
     An environment has already been provided to you by your principal investigator \(PI\). The environment is named with the Resource Allocation Project Identifier \(RAPI\) associated with your project.
 
 -   **User**:
 
-    A user account is how an individual connects to ACCP.
+    A user account is how an individual connects to ACCP. Users exist within a single organization.
 
 -   **Member**:
 
-    To access a given environment, a user normally must be made a member of that environment, either manually or automatically. However, some organization-level access controls will grant implied access to environments for certain users even if they aren't members.
+    To access a given environment, a user normally must be made a member of that environment, either manually or automatically. Navigate to an environment's **Manage Members** page from the environment list to add and remove users, enable or disable auto-membership, and to apply **environment roles** to members.
+
+    Some organization-level access controls, called **system roles**, will grant access to environments for certain users even if they aren't members.
 
 
 ## Accessing your environments
@@ -78,7 +86,7 @@ If any errors arise, ACCP includes tools that are helpful for troubleshooting:
 
 The ACCP platform is available at the following URL: [https://allianceaccp.cloudmc.ca/](https://allianceaccp.cloudmc.ca/)
 
-In order to log into the system for the first time, will need to open the invitation email that was sent to you. Click on the link to set the password for your ACCP account.
+In order to log into the system for the first time, you will need to open the invitation email that was sent to you. Click on the link to set the password for your ACCP account.
 
 ![Screenshot of the email invitation](drac-onboarding-email-invitation.png)
 
@@ -169,6 +177,40 @@ Upon logging in, you are presented with the **Home** page for the system.
 
 # Deploy and Connect to Galaxy
 
+
+## Galaxy Application
+
+There are two ways to use the ACCP with regards to the Galaxy application. Either by accessing the managed UseGalaxy.ca service with the option of attaching your compute resources via the ACCP, or by deploying a standard standalone Galaxy via the ACCP. If you have any issues with UseGalaxy.ca, Pulsar or Stand alone Galaxy use the form [here](https://starthere.usegalaxy.ca/).
+
+### Create an account and access UseGalaxy.ca
+
+UseGalaxy.ca, like the ACCP, uses CILogon for the authentication. UseGalaxy.ca will automatically create an account at login and allocate the appropriate storage quota according to your institution. We invite you to use this link [https://starthere.usegalaxy.ca/](https://starthere.usegalaxy.ca/) which provides all the information regarding the platform and the link to the login page.
+
+### Create and attach a compute node \(Pulsar node\) to UseGalaxy.ca
+
+Once you are on UseGalaxy.ca but you find the default resources too limited for your research, you can create a compute node \(named Pulsar node\) on the ACCP and it will be automatically linked to your UseGalaxy.ca account.
+
+Navigate to **Services** &gt; **Cloud Connect** and click on your deployment from the list of cloud deployments.
+
+1.  Click on the Galaxy tab.
+
+    It is also possible to click on your target cloud deployment, then from the sidebar on the left, click on Galaxy. When deploying via this route, the cloud deployment will be pre-selected and not modifiable when deploying Galaxy.
+
+2.  Click on the Deploy Pulsar button. The Deploy Pulsar page appears.
+3.  Enter a name for the deployment.
+4.  From the Cloud Deployment popup menu, select the target cloud deployment.
+5.  Click the Submit button.
+6.  The Pulsar tab reappears. The new Galaxy deployment is being provisioned and will take several minutes.
+7.  Once the deployment is complete, the Pulsar will be marked as active.
+8.  Next you simply login on UseGalaxy.ca.
+
+    **Important:** You must use the same Identity providers in CILogon when login to ACCP. Your jobs on UseGalaxy.ca will then run primarily on these Pulsar nodes reserved to your account.
+
+
+### Deploy a stand alone private Galaxy
+
+This mode will support use cases where researchers need to install custom tools, work with private data, or access larger compute and storage resources.
+
 ## Deploy Galaxy
 
 ### Before you begin
@@ -227,6 +269,7 @@ Upon logging in, you are presented with the **Home** page for the system.
 3.  After the Galaxy instance launches, you will be presented with the Galaxy interface.
 
     ![](drac-onboarding-galaxy-interface.png)
+
 
 
 # Deploy and Connect to Magic Castle
@@ -322,7 +365,6 @@ Upon logging in, you are presented with the **Home** page for the system.
 
 3.  The command for the login node now appears.
 
-
 # Feature Status
 
 This section provides a summary of the development status of various features in the ACCP platform.
@@ -364,7 +406,6 @@ Explanations of status:
     Feature is fully functional on the ACCP platform.
 
 
-
 # ACCP Nextcloud
 
 Nextcloud is an open-source file sync and sharing software, similar to Dropbox, Google drive, etc. The official user documentation is available here: https://docs.nextcloud.com/server/latest/user_manual/en/
@@ -386,43 +427,43 @@ To access the Arbutus object storage, generate the storage access ID and secret 
 
 To connect the Arbutus object with Nextcloud.
 
-1\.	Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.
+1\. Log into Nextcloud at https://206-12-91-208.cloud.computecanada.ca/ with CILogon with your institution’s username and password.
 
 ![A](nextcloud-01.png)
 
 ![A](nextcloud-02.png)
 
  
-2\.	Click on your profile in the top right corner and click on “Settings”
+2\. Click on your profile in the top right corner and click on “Settings”
 
 ![A](nextcloud-03.png)
  
-3\.	Click on “External Storage” in the left side menu.
+3\. Click on “External Storage” in the left side menu.
 
-4\.	Enter the name of the folder the Arbutus object storage is mounted to – e.g., Project ABC. Choose “Amazon S3” under the “External storage” column
+4\. Enter the name of the folder the Arbutus object storage is mounted to – e.g., Project ABC. Choose “Amazon S3” under the “External storage” column
 
 ![A](nextcloud-04.png)
 
-5\.	Choose “Access Key” under the “Authentication” column
-6\.	Under the Configuration enter the following information:
+5\. Choose “Access Key” under the “Authentication” column
+6\. Under the Configuration enter the following information:
 
 <span style="width: 40px; display: inline-block;"></span><span>a. Bucket: &lt;bucket name&gt;</span>
 <span style="width: 40px; display: inline-block;"></span><span>b. Hostname: object-arbutus.cloud.computecanada.ca</span>
 <span style="width: 40px; display: inline-block;"></span><span>c. Port: 443</span>
 <span style="width: 40px; display: inline-block;"></span><span>d. Click on “Enable Path Style”</span>
 <span style="width: 40px; display: inline-block;"></span><span>e. Leave “Enable SSL” and “Enable multipart copy” selected</span>
+
  
 ![A](nextcloud-05.png)
 
 
-7\.	Click the checkmark on the right and enter your institution account’s password.
-8\.	Click on “Files” in the top left corner
+7\. Click the checkmark on the right and enter your institution account’s password.
+8\. Click on “Files” in the top left corner
 
 ![A](nextcloud-06.png)
 
  
-9\.	Click on the folder you created to access the files in your Arbutus object storage bucket – e.g., Project ABC
+9\. Click on the folder you created to access the files in your Arbutus object storage bucket – e.g., Project ABC
  
 ![A](nextcloud-07.png)
-
 

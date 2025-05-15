@@ -17,7 +17,7 @@ In this guide, you will find an overview of the basic workflows and concepts in 
 
 The following are the high-level steps required to deploy one or more research apps:
 
-![Diagram illustrating a high-level view of the steps to configure and deploy in Cloud Connect](./drac-onboarding-user-workflow-overview.svg)
+![Diagram illustrating a high-level view of the steps to configure and deploy in Cloud Connect](drac-onboarding-user-workflow-overview.png)
 
 1.  **Select a Cloud Connect deployment**
 
